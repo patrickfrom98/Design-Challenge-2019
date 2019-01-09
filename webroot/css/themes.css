@@ -84,3 +84,13 @@ label {
 .notifications-pane h1 {
   color: #177fce;
 }
+
+
+/*
+* Adds styling to text
+*
+* Effects users username
+*/
+.username {
+  color: #191919;
+}

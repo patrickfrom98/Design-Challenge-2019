@@ -24,7 +24,7 @@
   <div class="wrapper dashboard">
       <div class="box col-1-1fr">
           <div class="welcome-pane">
-              <h3>Welcome to MiTeck Tracking System dashboard <?php echo $_SESSION['username']; ?></h3>
+              <h3>Welcome to MiTeck Tracking System dashboard <span class="username"><?php echo $_SESSION['username']; ?></span></h3>
               <p>Find out everything you need to know about the status of each individual product</p>
           </div>
       </div>
