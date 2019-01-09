@@ -10,12 +10,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/themes.css">
     <link rel="stylesheet" type="text/css" href="css/framework.css">
     <link rel="stylesheet" type="text/css" href="includes/css/navbar.css">
     <link rel="stylesheet" type="text/css" href="includes/css/footer.css">
+
+    <script type="text/javascript" src="includes/js/navbar.js"></script>
 
     <title>Dashboard | MiTek Tracking System</title>
 </head>
