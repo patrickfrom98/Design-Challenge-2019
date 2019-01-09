@@ -21,11 +21,14 @@
 </head>
 <body>
   <?php require($DOCUMENT_ROOT . "includes/navbar.php"); ?>
-  <div class="wrapper">
-    <h3>Welcome to MiTeck Tracking System dashboard <?php echo $_SESSION['username']; ?></h3>
-    <p>Find out everything you need to know about the status of each individual product</p>
-  </div>
   <div class="wrapper dashboard">
+      <div class="box col-1-1fr">
+          <div class="welcome-pane">
+              <h3>Welcome to MiTeck Tracking System dashboard <?php echo $_SESSION['username']; ?></h3>
+              <p>Find out everything you need to know about the status of each individual product</p>
+          </div>
+      </div>
+      <br>
       <div class="box col-1-1fr">
           <div class="notifications-pane">
               <h1>Notifications</h1>

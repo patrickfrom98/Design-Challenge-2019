@@ -7,6 +7,10 @@ h3 {
   width: 100%;
 }
 
+.welcome-pane {
+  min-height: 45px;
+}
+
 .notifications-pane {
   min-height: 200px;
 }

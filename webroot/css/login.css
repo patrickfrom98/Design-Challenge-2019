@@ -1,10 +1,22 @@
+form {
+  margin: auto;
+}
+
+h1.form-heading {
+  text-align:
+}
+
+input[type=input].form-button {
+  margin: auto;
+}
+
 .login-form {
   width: 40%;
-  border-radius: 10px;
 }
 
 .login-form h1, h3 {
   text-align: center;
+  padding: 0px;
 }
 
 .login-boxes {

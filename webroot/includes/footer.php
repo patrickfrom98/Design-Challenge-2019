@@ -49,10 +49,10 @@ if (isset($_SESSION['role'])) {
                   <h1>Admin Settings</h1>
                   <br>
                   <ul>
-                      <li><a href='#'>Change Passwords</a></li>
+                      <li><a href='#'>Access Rights</a></li>
+                      <li><a href='#'>User Accounts</a></li>
                       <li><a href='#'>Change Themes</a></li>
-                      <li><a href='#'>Chage User Accounts</a></li>
-                      <li><a href='#'>Add User</a></li>
+                      <li><a href='#'>Database</a></li>
                   </ul></div>";
     }
 }
