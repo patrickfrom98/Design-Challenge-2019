@@ -2,3 +2,15 @@ h3 {
     font-size: 1.2rem;
     font-family: 'Staatliches', cursive;
 }
+
+.dashboard {
+  width: 100%;
+}
+
+.notifications-pane {
+  min-height: 200px;
+}
+
+.dashboard-pane {
+  min-height: 400px;
+}

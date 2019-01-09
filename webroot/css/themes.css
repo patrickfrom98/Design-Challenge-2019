@@ -76,3 +76,11 @@ label {
 .login-form {
   background-color: #f2f2f2;
 }
+
+.dashboard-pane h1 {
+  color: #177fce;
+}
+
+.notifications-pane h1 {
+  color: #177fce;
+}

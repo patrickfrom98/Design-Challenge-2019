@@ -5,8 +5,6 @@ footer {
   min-height: 150px;
   border-top-style: solid;
   border-top-width: 4px;
-  position: absolute;
-  bottom: 0px;
 }
 
 .footer-column h1 {
