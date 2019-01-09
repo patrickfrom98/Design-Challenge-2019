@@ -1,0 +1,13 @@
+.login-form {
+  width: 40%;
+  border-radius: 10px;
+}
+
+.login-form h1, h3 {
+  text-align: center;
+}
+
+.login-boxes {
+  position: relative;
+  margin: 0 auto;
+}

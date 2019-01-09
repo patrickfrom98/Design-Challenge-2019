@@ -1,0 +1,78 @@
+body {
+  background-color: #fff;
+}
+
+header {
+  background-color: #177fce;
+}
+
+footer {
+  background-color: #191919;
+  border-color: #177fce;
+}
+
+footer .box div {
+  background-color: #191919;
+}
+
+input[type=submit] {
+  background-color: #177fce;
+  color: #fff;
+}
+
+input[type=submit]:hover {
+  background-color: #005daa;
+}
+
+input[type=submit].danger {
+  background-color: #e50000;
+}
+
+input[type=submit].danger:hover {
+  background-color: #ff0000;
+}
+
+/*
+* Fixes Chrome bug
+* Styles <input> background color and color
+*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-text-fill-color: #474b4f !important;
+}
+
+input:-webkit-autofill:hover {
+    -webkit-box-shadow: 0 0 0px 1000px #f4f4f4 inset;
+}
+
+h1, h2{
+  color: #fff;
+}
+
+h3, h4, h5, h6 {
+  color: #177fce;
+}
+
+p {
+  color: #474b4f;
+}
+
+a {
+  color: #177fce;
+}
+
+a:hover {
+  color: #005daa;
+}
+
+label {
+  color: #000;
+}
+
+.box div {
+  background-color: #f2f2f2;
+}
+
+.login-form {
+  background-color: #f2f2f2;
+}

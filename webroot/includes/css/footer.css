@@ -1,0 +1,22 @@
+footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 150px;
+  border-top-style: solid;
+  border-top-width: 4px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.footer-column h1 {
+    text-align: center;
+}
+
+.footer-column ul {
+    text-align: center;
+}
+
+.footer-column li {
+    margin-bottom: 6px;
+}
