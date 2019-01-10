@@ -3,6 +3,35 @@ h3 {
     font-family: 'Staatliches', cursive;
 }
 
+table {
+  padding: 0px;
+  margin-top: 1em;
+  width: 100%;
+}
+
+tr:hover {background-color: #f4f4f4;}
+
+table {
+  border-collapse: collapse;
+  font-family: Calibri;
+}
+
+th {
+  height: 50px;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+td {
+  height: 50px;
+  text-align: center;
+}
+
+th, td {
+  padding: 10px;
+}
+
 .dashboard {
   width: 100%;
 }
@@ -12,9 +41,9 @@ h3 {
 }
 
 .notifications-pane {
-  min-height: 200px;
+  min-height: 150px;
 }
 
 .dashboard-pane {
-  min-height: 400px;
+  min-height: 300px;
 }

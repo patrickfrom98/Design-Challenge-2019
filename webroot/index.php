@@ -4,6 +4,8 @@
   if (!isset($_SESSION['username'])) {
     header("Location: login.php");
   }
+
+  require_once("index-process.php");
 ?>
 
 <!DOCTYPE html>
@@ -43,18 +45,94 @@
           <div class="dashboard-pane">
               <h1>Latest Materials Jobs</h1>
               <hr />
+              <table>
+                <tr>
+                  <th>ID</th>
+                  <th>Timestamp</th>
+                  <th>Height</th>
+                  <th>Weight</th>
+                  <th>Span</th>
+                  <th>Pitch</th>
+                </tr>
+                <!-- PHP script for displaying truss data-->
+                <?php
+                  $conn = getConnection();
+                  $results = getTrussStates("Pick Materials");
+
+                  foreach ($results as $result) {
+                    echo "<tr><td>{$result['truss_id']}</td><td>{$result['timestamp']}</td><td>{$result['height']}</td><td>{$result['weight']}</td><td>{$result['span']}</td><td>{$result['pitch']}</td></tr>";
+                  }
+                ?>
+              </table>
           </div>
           <div class="dashboard-pane">
               <h1>Latest Cutting Jobs</h1>
               <hr />
+              <table>
+                <tr>
+                  <th>ID</th>
+                  <th>Timestamp</th>
+                  <th>Height</th>
+                  <th>Weight</th>
+                  <th>Span</th>
+                  <th>Pitch</th>
+                </tr>
+                <!-- PHP script for displaying truss data-->
+                <?php
+                  $conn = getConnection();
+                  $results = getTrussStates("Cut Timber");
+
+                  foreach ($results as $result) {
+                    echo "<tr><td>{$result['truss_id']}</td><td>{$result['timestamp']}</td><td>{$result['height']}</td><td>{$result['weight']}</td><td>{$result['span']}</td><td>{$result['pitch']}</td></tr>";
+                  }
+                ?>
+              </table>
           </div>
           <div class="dashboard-pane">
               <h1>Latest Making Jobs</h1>
               <hr />
+              <table>
+                <tr>
+                  <th>ID</th>
+                  <th>Timestamp</th>
+                  <th>Height</th>
+                  <th>Weight</th>
+                  <th>Span</th>
+                  <th>Pitch</th>
+                </tr>
+                <!-- PHP script for displaying truss data-->
+                <?php
+                  $conn = getConnection();
+                  $results = getTrussStates("Make");
+
+                  foreach ($results as $result) {
+                    echo "<tr><td>{$result['truss_id']}</td><td>{$result['timestamp']}</td><td>{$result['height']}</td><td>{$result['weight']}</td><td>{$result['span']}</td><td>{$result['pitch']}</td></tr>";
+                  }
+                ?>
+              </table>
           </div>
           <div class="dashboard-pane">
               <h1>Latest Loading Jobs</h1>
               <hr />
+              <table>
+                <tr>
+                  <th>ID</th>
+                  <th>Timestamp</th>
+                  <th>Height</th>
+                  <th>Weight</th>
+                  <th>Span</th>
+                  <th>Pitch</th>
+                </tr>
+                <!-- PHP script for displaying truss data-->
+                <?php
+                  $conn = getConnection();
+                  $results = getTrussStates("Load");
+
+                  foreach ($results as $result) {
+                    echo "<tr><td>{$result['truss_id']}</td><td>{$result['timestamp']}</td><td>{$result['height']}</td><td>{$result['weight']}</td><td>{$result['span']}</td><td>{$result['pitch']}</td></tr>";
+                  }
+                ?>
+              </table>
           </div>
       </div>
   </div>

@@ -69,6 +69,15 @@ label {
   color: #000;
 }
 
+table, th, td {
+  border: 0.5px solid #177fce;
+}
+
+table th {
+  background-color: #177fce;
+  color: #fff;
+}
+
 .box div {
   background-color: #f2f2f2;
 }

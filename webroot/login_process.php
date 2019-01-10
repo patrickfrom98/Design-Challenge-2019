@@ -21,24 +21,24 @@
       $pwd = trim($_POST['password']);
 
       //Get valid login details
-      $stmt = $pdo->prepare("SELECT * FROM wdp_User WHERE username=:username");
+      $stmt = $pdo->prepare("SELECT * FROM employee WHERE username=:username");
       $stmt->bindValue(':username', $user);
       $stmt->execute();
       $validUser = $stmt->fetch();
 
       //Allow or deny access
       if ($validUser) {
-          if (password_verify($pwd, $validUser['pwd'])) {
+          if (password_verify($pwd, $validUser['password'])) {
               $_SESSION["username"] = $user;
 
               //Get Users role (Admin/Customer/etc...)
-              $stmt = $pdo->prepare("SELECT title FROM wdp_Role WHERE userid=:id");
+              $stmt = $pdo->prepare("SELECT role FROM employee WHERE employee_id=:id");
               echo $validUser['userid'];
-              $stmt->bindValue(':id', $validUser['userid']);
+              $stmt->bindValue(':id', $validUser['employee_id']);
               $stmt->execute();
               $title = $stmt->fetch();
 
-              $_SESSION['role'] = $title['title'];
+              $_SESSION['role'] = $title['role'];
               header("Location: index.php");
           } else {
               echo "<h1>Wrong login details. Go back, try again</h1>";

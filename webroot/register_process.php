@@ -15,9 +15,6 @@
         }
 
         //Define variables
-        $fname = trim($_POST['fname']);
-        $lname = trim($_POST['lname']);
-        $email = trim($_POST['email']);
         $user  = trim($_POST['username']);
         $pwd   = trim($_POST['password']);
         echo "Password is before hash: {$pwd}";
@@ -28,13 +25,10 @@
         echo "Aaaand, begin the debugging process";
 
         //Inserts details into DB
-        $sql  = "INSERT INTO wdp_User (userid, fname, lname, email, username, pwd)
-                               VALUES (NULL, :fname, :lname, :email, :username, :password)";
+        $sql  = "INSERT INTO employee (employee_id, username, password, role)
+                               VALUES (NULL, :username, :password, 'Employee')";
         echo "You reached this bit right?";
         $stmt = $pdo->prepare($sql);
-        $stmt->bindValue(':fname', $fname);
-        $stmt->bindValue(':lname', $lname);
-        $stmt->bindValue(':email', $email);
         $stmt->bindValue(':username', $user);
         $stmt->bindValue(':password', $hashed_pwd);
         $stmt->execute();
@@ -42,7 +36,7 @@
       echo "have you reached here?";
 
         //Check for successful registration
-        $sql = "SELECT * FROM wdp_User WHERE username = :username";
+        $sql = "SELECT * FROM employee WHERE username = :username";
         $stmt = $pdo->prepare($sql);
         $stmt->bindValue(':username', $user);
         $stmt->execute();
@@ -50,11 +44,6 @@
 
         //Inserts users role detials into database
         if ($validUser) {
-          $sql = "INSERT INTO wdp_Role (userid, title) VALUES (:id, 'Customer')";
-          $stmt = $pdo->prepare($sql);
-          $stmt->bindValue(':id', $validUser['userid']);
-          $stmt->execute();
-
           echo "<h1>Go to</h1><a href='login.php'>login</a>";
         }
 

@@ -1,10 +1,8 @@
 <?php
-  session_start();
-
   //Create database connection
   function getConnection(){
     try {
-        $pdo = new PDO("mysql:host=localhost; dbname=team24", 'team24', 'password');
+        $pdo = new PDO("mysql:host=localhost; dbname=u1756102", 'u1756102', '08nov98');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;
     } catch(PDOException $e) {
@@ -27,8 +25,4 @@
     $states = $prepType->fetchAll();
     return $states;
   }
-
-  $materialsStates = getTrussStates("Pick Materials");
-  print_r($materialsStates);
-
 ?>
