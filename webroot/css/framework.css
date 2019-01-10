@@ -10,7 +10,7 @@ body {
 
 .wrapper {
     margin: 0;
-    padding: 1em;
+    padding: 1em 0 1em 0;
 }
 
 .box {
@@ -34,7 +34,7 @@ body {
 }
 
 .box div {
-  padding: 1em;
+  padding: 10px;
 }
 
 
@@ -103,7 +103,7 @@ ul {
 */
 @media screen and (max-width: 960px) {
     .box {
-        width: 100%;
+        width: 95%;
     }
 
     .box.col-3-1fr {

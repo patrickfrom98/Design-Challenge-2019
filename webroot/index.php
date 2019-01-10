@@ -49,10 +49,6 @@
                 <tr>
                   <th>ID</th>
                   <th>Timestamp</th>
-                  <th>Height</th>
-                  <th>Weight</th>
-                  <th>Span</th>
-                  <th>Pitch</th>
                 </tr>
                 <!-- PHP script for displaying truss data-->
                 <?php
@@ -60,7 +56,7 @@
                   $results = getTrussStates("Pick Materials");
 
                   foreach ($results as $result) {
-                    echo "<tr><td>{$result['truss_id']}</td><td>{$result['timestamp']}</td><td>{$result['height']}</td><td>{$result['weight']}</td><td>{$result['span']}</td><td>{$result['pitch']}</td></tr>";
+                    echo "<tr><td>{$result['truss_id']}</td><td>{$result['timestamp']}</td></tr>";
                   }
                 ?>
               </table>
@@ -72,10 +68,6 @@
                 <tr>
                   <th>ID</th>
                   <th>Timestamp</th>
-                  <th>Height</th>
-                  <th>Weight</th>
-                  <th>Span</th>
-                  <th>Pitch</th>
                 </tr>
                 <!-- PHP script for displaying truss data-->
                 <?php
@@ -83,7 +75,7 @@
                   $results = getTrussStates("Cut Timber");
 
                   foreach ($results as $result) {
-                    echo "<tr><td>{$result['truss_id']}</td><td>{$result['timestamp']}</td><td>{$result['height']}</td><td>{$result['weight']}</td><td>{$result['span']}</td><td>{$result['pitch']}</td></tr>";
+                    echo "<tr><td>{$result['truss_id']}</td><td>{$result['timestamp']}</td></tr>";
                   }
                 ?>
               </table>
@@ -95,10 +87,6 @@
                 <tr>
                   <th>ID</th>
                   <th>Timestamp</th>
-                  <th>Height</th>
-                  <th>Weight</th>
-                  <th>Span</th>
-                  <th>Pitch</th>
                 </tr>
                 <!-- PHP script for displaying truss data-->
                 <?php
@@ -106,7 +94,7 @@
                   $results = getTrussStates("Make");
 
                   foreach ($results as $result) {
-                    echo "<tr><td>{$result['truss_id']}</td><td>{$result['timestamp']}</td><td>{$result['height']}</td><td>{$result['weight']}</td><td>{$result['span']}</td><td>{$result['pitch']}</td></tr>";
+                    echo "<tr><td>{$result['truss_id']}</td><td>{$result['timestamp']}</td></tr>";
                   }
                 ?>
               </table>
@@ -118,10 +106,6 @@
                 <tr>
                   <th>ID</th>
                   <th>Timestamp</th>
-                  <th>Height</th>
-                  <th>Weight</th>
-                  <th>Span</th>
-                  <th>Pitch</th>
                 </tr>
                 <!-- PHP script for displaying truss data-->
                 <?php
@@ -129,7 +113,7 @@
                   $results = getTrussStates("Load");
 
                   foreach ($results as $result) {
-                    echo "<tr><td>{$result['truss_id']}</td><td>{$result['timestamp']}</td><td>{$result['height']}</td><td>{$result['weight']}</td><td>{$result['span']}</td><td>{$result['pitch']}</td></tr>";
+                    echo "<tr><td>{$result['truss_id']}</td><td>{$result['timestamp']}</td></tr>";
                   }
                 ?>
               </table>
