@@ -1,5 +1,5 @@
 <?php
-  if (empty($_FILES)) {
+  if (empty($_GET)) {
 ?>
 <form action="sensor_process.php" method="post" id="sensorSubmit">
   <input type="file" id="json" name="json">
@@ -8,7 +8,7 @@
 
 <?php
   } else {
-    $jsonRaw = $_FILES[0];
+    $jsonRaw = $_GET["json"];
     // $jsonRaw = '{
     //   "truss_id":"1",
     //   "sensor_id":"1",
@@ -21,7 +21,7 @@
     foreach ($jsonArray as $jsonValue) {
       $charArray = str_split($jsonValue);
       $filteredArray = array_filter($charArray, function($char){
-        if (in_array($char, ['{', '}', ',' ,'"'])) {
+        if (in_array($char, ['{', '}', ',' ,'"', "'"])) {
           return false;
         }
         return true;
