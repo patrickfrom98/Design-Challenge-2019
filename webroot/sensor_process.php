@@ -2,7 +2,7 @@
   if (empty($_FILES)) {
 ?>
 <form action="sensor_process.php" method="post" id="sensorSubmit">
-  <input type="upload" id="json" name="json">
+  <input type="file" id="json" name="json">
   <input type="submit" id="submit" name="submit" value="submit">
 </form>
 
