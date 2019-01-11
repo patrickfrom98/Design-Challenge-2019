@@ -39,7 +39,7 @@
     // $location = substr($cleanArray[4], (strpos($cleanArray[4], ':') + 1));
 
     try {
-        $pdo = new PDO("mysql:host=localhost; dbname=team24", 'team24', 'password');
+        $pdo = new PDO("mysql:host=localhost; dbname=u1756102", 'u1756102', '08nov98');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch(PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
