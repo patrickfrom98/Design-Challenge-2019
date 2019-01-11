@@ -49,6 +49,8 @@
     $prepState = $pdo->prepare($stateCreationQuery);
     $prepState->bindValue(':state_type_id', $_GET["state_type_id"]);
     $prepState->bindValue(':timest', $_GET["timestamp"]);
+    // $timestamp = date("Y-m-d H:i:s");
+    // $prepState->bindValue(':timest', $timestamp);
     $prepState->bindValue(':location', $_GET["location"]);
     // $prepState->bindValue(':jsonRaw', $_GET["state_type_id"]);
     $prepState->execute();
